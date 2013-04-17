@@ -24,6 +24,8 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "SKAlertView.h"
+
 typedef enum {
 	SKTipAlertViewPositionTop = 0,
 	SKTipAlertViewPositionBottom = 1
@@ -32,5 +34,7 @@ typedef enum {
 @interface SKTipAlertView : NSObject
 
 + (id)sharedTipAlertView;
--(void)showNotificationForView:(UIView*)view forDuration:(int)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent;
+-(void)showRedNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent;
+-(void)showBlueNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent;
+-(void)showNotificationForView:(UIView*)view forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent;
 @end

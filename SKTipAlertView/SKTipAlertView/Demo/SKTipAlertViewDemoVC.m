@@ -68,7 +68,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,6 +90,10 @@
         [cell.textLabel setText:@"Top green auto 2 sec"];
     } else if (indexPath.row == 4) {
         [cell.textLabel setText:@"Show Demo View"];
+    } else if (indexPath.row == 5) {
+        [cell.textLabel setText:@"Show Red Alert from string"];
+    } else if (indexPath.row == 6) {
+        [cell.textLabel setText:@"Show Blue Alert from string"];
     }
     
     return cell;
@@ -99,31 +103,33 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
+    
     if (indexPath.row == 0) {
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 30)];
         [view setBackgroundColor:[UIColor redColor]];
-        SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
         [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionBottom permanent:YES];
     } else if (indexPath.row == 1) {
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
         [view setBackgroundColor:[UIColor greenColor]];
-        SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
         [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionBottom permanent:NO];
     } else if (indexPath.row == 2) {
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 30)];
         [view setBackgroundColor:[UIColor redColor]];
-        SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
         [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionTop permanent:YES];
     } else if (indexPath.row == 3) {
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
         [view setBackgroundColor:[UIColor greenColor]];
-        SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
         [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionTop permanent:NO];
     } else if (indexPath.row == 4) {
         DemoView *demoView = [[DemoView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
         [demoView.textLabel setText:@"Hello world"];
-        SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
         [alertView showNotificationForView:demoView forDuration:2 andPosition:SKTipAlertViewPositionTop permanent:NO];
+    } else if (indexPath.row == 5) {
+        [alertView showRedNotificationForString:@"Red Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+    } else if (indexPath.row == 6) {
+        [alertView showBlueNotificationForString:@"Blue Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+//        [alertView showBlueNotificationForString:@"Blue alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
     }
 }
 

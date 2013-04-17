@@ -53,10 +53,27 @@ id sharedInstance = nil;
     return self;
 }
 
--(void)showNotificationForView:(UIView*)view forDuration:(int)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
+-(void)showRedNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
+    SKAlertView *view = [[SKAlertView alloc] initWithFrame:CGRectMake(0, 0, 280, 30)];
+    [view setbackgroundImage:[[UIImage imageNamed:@"SK-Red"] resizableImageWithCapInsets:UIEdgeInsetsMake(8, 8, 8, 8)]];
+    [view setText:content];
+    [self showNotificationForView:view forDuration:duration andPosition:position permanent:permanent];
+}
+
+-(void)showBlueNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
+    SKAlertView *view = [[SKAlertView alloc] initWithFrame:CGRectMake(0, 0, 280, 30)];
+    [view setbackgroundImage:[[UIImage imageNamed:@"SK-Blue"] resizableImageWithCapInsets:UIEdgeInsetsMake(8, 8, 8, 8)]];
+    [view setText:content];
+    [self showNotificationForView:view forDuration:duration andPosition:position permanent:permanent];
+}
+
+-(void)showNotificationForView:(UIView*)view forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
     if (![view isKindOfClass:[UIView class]]) {
         NSLog(@"notification has to be instance of UIView");
         return;
+    }
+    if (duration <= 0) {
+        duration = 1.5;
     }
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     [window addSubview:view];
