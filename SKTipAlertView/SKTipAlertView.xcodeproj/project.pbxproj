@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5278CCC171EA4C8004D01A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5278CCB171EA4C8004D01A4 /* UIKit.framework */; };
+		F5278CCE171EA4C8004D01A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5278CCD171EA4C8004D01A4 /* Foundation.framework */; };
+		F5278CD0171EA4C8004D01A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5278CCF171EA4C8004D01A4 /* CoreGraphics.framework */; };
+		F5278CD6171EA4C8004D01A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5278CD4171EA4C8004D01A4 /* InfoPlist.strings */; };
+		F5278CD8171EA4C8004D01A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5278CD7171EA4C8004D01A4 /* main.m */; };
+		F5278CDC171EA4C8004D01A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5278CDB171EA4C8004D01A4 /* AppDelegate.m */; };
+		F5278CDE171EA4C8004D01A4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CDD171EA4C8004D01A4 /* Default.png */; };
+		F5278CE0171EA4C8004D01A4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CDF171EA4C8004D01A4 /* Default@2x.png */; };
+		F5278CE2171EA4C8004D01A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CE1171EA4C8004D01A4 /* Default-568h@2x.png */; };
+		F5278CEE171EA4FA004D01A4 /* SKTipAlertViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5278CEA171EA4FA004D01A4 /* SKTipAlertViewDemoVC.m */; };
+		F5278CEF171EA4FA004D01A4 /* SKTipAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5278CED171EA4FA004D01A4 /* SKTipAlertView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5278CC8171EA4C8004D01A4 /* SKTipAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKTipAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5278CCB171EA4C8004D01A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5278CCD171EA4C8004D01A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5278CCF171EA4C8004D01A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F5278CD3171EA4C8004D01A4 /* SKTipAlertView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKTipAlertView-Info.plist"; sourceTree = "<group>"; };
+		F5278CD5171EA4C8004D01A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5278CD7171EA4C8004D01A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5278CD9171EA4C8004D01A4 /* SKTipAlertView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKTipAlertView-Prefix.pch"; sourceTree = "<group>"; };
+		F5278CDA171EA4C8004D01A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5278CDB171EA4C8004D01A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5278CDD171EA4C8004D01A4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F5278CDF171EA4C8004D01A4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F5278CE1171EA4C8004D01A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F5278CE9171EA4FA004D01A4 /* SKTipAlertViewDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTipAlertViewDemoVC.h; sourceTree = "<group>"; };
+		F5278CEA171EA4FA004D01A4 /* SKTipAlertViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTipAlertViewDemoVC.m; sourceTree = "<group>"; };
+		F5278CEC171EA4FA004D01A4 /* SKTipAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTipAlertView.h; sourceTree = "<group>"; };
+		F5278CED171EA4FA004D01A4 /* SKTipAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTipAlertView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5278CC5171EA4C8004D01A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5278CCC171EA4C8004D01A4 /* UIKit.framework in Frameworks */,
+				F5278CCE171EA4C8004D01A4 /* Foundation.framework in Frameworks */,
+				F5278CD0171EA4C8004D01A4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5278CBF171EA4C8004D01A4 = {
+			isa = PBXGroup;
+			children = (
+				F5278CD1171EA4C8004D01A4 /* SKTipAlertView */,
+				F5278CCA171EA4C8004D01A4 /* Frameworks */,
+				F5278CC9171EA4C8004D01A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5278CC9171EA4C8004D01A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5278CC8171EA4C8004D01A4 /* SKTipAlertView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5278CCA171EA4C8004D01A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5278CCB171EA4C8004D01A4 /* UIKit.framework */,
+				F5278CCD171EA4C8004D01A4 /* Foundation.framework */,
+				F5278CCF171EA4C8004D01A4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5278CD1171EA4C8004D01A4 /* SKTipAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F5278CEB171EA4FA004D01A4 /* SKTipAlertView */,
+				F5278CE8171EA4FA004D01A4 /* Demo */,
+				F5278CDA171EA4C8004D01A4 /* AppDelegate.h */,
+				F5278CDB171EA4C8004D01A4 /* AppDelegate.m */,
+				F5278CD2171EA4C8004D01A4 /* Supporting Files */,
+			);
+			path = SKTipAlertView;
+			sourceTree = "<group>";
+		};
+		F5278CD2171EA4C8004D01A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5278CD3171EA4C8004D01A4 /* SKTipAlertView-Info.plist */,
+				F5278CD4171EA4C8004D01A4 /* InfoPlist.strings */,
+				F5278CD7171EA4C8004D01A4 /* main.m */,
+				F5278CD9171EA4C8004D01A4 /* SKTipAlertView-Prefix.pch */,
+				F5278CDD171EA4C8004D01A4 /* Default.png */,
+				F5278CDF171EA4C8004D01A4 /* Default@2x.png */,
+				F5278CE1171EA4C8004D01A4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5278CE8171EA4FA004D01A4 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F5278CE9171EA4FA004D01A4 /* SKTipAlertViewDemoVC.h */,
+				F5278CEA171EA4FA004D01A4 /* SKTipAlertViewDemoVC.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F5278CEB171EA4FA004D01A4 /* SKTipAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F5278CEC171EA4FA004D01A4 /* SKTipAlertView.h */,
+				F5278CED171EA4FA004D01A4 /* SKTipAlertView.m */,
+			);
+			path = SKTipAlertView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5278CC7171EA4C8004D01A4 /* SKTipAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5278CE5171EA4C8004D01A4 /* Build configuration list for PBXNativeTarget "SKTipAlertView" */;
+			buildPhases = (
+				F5278CC4171EA4C8004D01A4 /* Sources */,
+				F5278CC5171EA4C8004D01A4 /* Frameworks */,
+				F5278CC6171EA4C8004D01A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKTipAlertView;
+			productName = SKTipAlertView;
+			productReference = F5278CC8171EA4C8004D01A4 /* SKTipAlertView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5278CC0171EA4C8004D01A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = SaKKoPro;
+			};
+			buildConfigurationList = F5278CC3171EA4C8004D01A4 /* Build configuration list for PBXProject "SKTipAlertView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5278CBF171EA4C8004D01A4;
+			productRefGroup = F5278CC9171EA4C8004D01A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5278CC7171EA4C8004D01A4 /* SKTipAlertView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5278CC6171EA4C8004D01A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5278CD6171EA4C8004D01A4 /* InfoPlist.strings in Resources */,
+				F5278CDE171EA4C8004D01A4 /* Default.png in Resources */,
+				F5278CE0171EA4C8004D01A4 /* Default@2x.png in Resources */,
+				F5278CE2171EA4C8004D01A4 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5278CC4171EA4C8004D01A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5278CD8171EA4C8004D01A4 /* main.m in Sources */,
+				F5278CDC171EA4C8004D01A4 /* AppDelegate.m in Sources */,
+				F5278CEE171EA4FA004D01A4 /* SKTipAlertViewDemoVC.m in Sources */,
+				F5278CEF171EA4FA004D01A4 /* SKTipAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5278CD4171EA4C8004D01A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5278CD5171EA4C8004D01A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5278CE3171EA4C8004D01A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5278CE4171EA4C8004D01A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5278CE6171EA4C8004D01A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKTipAlertView/SKTipAlertView-Prefix.pch";
+				INFOPLIST_FILE = "SKTipAlertView/SKTipAlertView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F5278CE7171EA4C8004D01A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKTipAlertView/SKTipAlertView-Prefix.pch";
+				INFOPLIST_FILE = "SKTipAlertView/SKTipAlertView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5278CC3171EA4C8004D01A4 /* Build configuration list for PBXProject "SKTipAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5278CE3171EA4C8004D01A4 /* Debug */,
+				F5278CE4171EA4C8004D01A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5278CE5171EA4C8004D01A4 /* Build configuration list for PBXNativeTarget "SKTipAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5278CE6171EA4C8004D01A4 /* Debug */,
+				F5278CE7171EA4C8004D01A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5278CC0171EA4C8004D01A4 /* Project object */;
+}
