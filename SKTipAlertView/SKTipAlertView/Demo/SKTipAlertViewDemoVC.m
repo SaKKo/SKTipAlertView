@@ -25,6 +25,8 @@
 
 #import "SKTipAlertViewDemoVC.h"
 #import "SKTipAlertView.h"
+#import "DemoView.h"
+
 @interface SKTipAlertViewDemoVC ()
 
 @end
@@ -66,7 +68,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -86,6 +88,8 @@
         [cell.textLabel setText:@"Top red permanent"];
     } else if (indexPath.row == 3) {
         [cell.textLabel setText:@"Top green auto 2 sec"];
+    } else if (indexPath.row == 4) {
+        [cell.textLabel setText:@"Show Demo View"];
     }
     
     return cell;
@@ -115,6 +119,11 @@
         [view setBackgroundColor:[UIColor greenColor]];
         SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
         [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionTop permanent:NO];
+    } else if (indexPath.row == 4) {
+        DemoView *demoView = [[DemoView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+        [demoView.textLabel setText:@"Hello world"];
+        SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
+        [alertView showNotificationForView:demoView forDuration:2 andPosition:SKTipAlertViewPositionTop permanent:NO];
     }
 }
 
