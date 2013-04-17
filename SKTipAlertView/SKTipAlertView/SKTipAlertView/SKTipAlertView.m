@@ -32,15 +32,15 @@
 
 @implementation SKTipAlertView
 
-id sharedInstance = nil;
+id sharedTipAlertView = nil;
 
 + (id)sharedTipAlertView {
-    @synchronized(sharedInstance) {
-        if (!sharedInstance) {
-            sharedInstance = [[[self class] alloc] init];
+    @synchronized(sharedTipAlertView) {
+        if (!sharedTipAlertView) {
+            sharedTipAlertView = [[[self class] alloc] init];
         }
     }
-    return sharedInstance;
+    return sharedTipAlertView;
 }
 
 
@@ -95,11 +95,11 @@ id sharedInstance = nil;
     }
     
     NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:view,@"view",positionString,@"position", nil];
-
+    
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.3];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-
+    
     if (position == SKTipAlertViewPositionBottom) {
         [view setFrame:CGRectMake((w-view.frame.size.width)/2, h-view.frame.size.height, view.frame.size.width, view.frame.size.height)];
     } else {
