@@ -18,10 +18,11 @@ Usage
 To show popup,
 
   Create any UIView instance
+
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 30)];
     [view setBackgroundColor:[UIColor redColor]];
 
   Pass it to SKTipAlertView
+
     SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
     [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionBottom permanent:YES];
-
