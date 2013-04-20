@@ -5,11 +5,13 @@ iOS project UIView that popup either on top or bottom of the main UIWindow insta
 
 The Popup view will hide automatically or it can be set to hide only when the user tapped on the view.
 
-![Screenshot: Launch image](https://github.com/SaKKo/SKTipAlertView/blob/master/ScreenShot1.png?raw=true)
-![Screenshot: Launch image](https://github.com/SaKKo/SKTipAlertView/blob/master/ScreenShot2.png?raw=true)
+![Screenshot: Launch image](https://github.com/SaKKo/SKTipAlertView/blob/master/BlueAlertScreenshot.png?raw=true)
+![Screenshot: Launch image](https://github.com/SaKKo/SKTipAlertView/blob/master/GreenAlertScreenshot.png?raw=true)
+![Screenshot: Launch image](https://github.com/SaKKo/SKTipAlertView/blob/master/RedAlertScreenshot.png?raw=true)
+![Screenshot: Launch image](https://github.com/SaKKo/SKTipAlertView/blob/master/RedAlertMultiScreenshot.png?raw=true)
 
 This Project use ARC as main and is created using iOS 6.0SDK.
-However, it should work with iOS 4.3 or above. (tested)
+However, it should work with iOS 5.0 or above. (tested)
 The code is clean and easy to read.
 
 Installation
@@ -29,10 +31,20 @@ To show popup,
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 30)];
     [view setBackgroundColor:[UIColor redColor]];
 
-  Pass it to SKTipAlertView together with type SKTipAlertViewPositionBottom or SKTipAlertViewPositionTop.
+  Pass it to SKTipAlertView together with type `SKTipAlertViewPositionBottom` or `SKTipAlertViewPositionTop`.
+
+  `Duration` is in `second`, and when `Permanent` = `YES`, it means that the popup will wait for user to touch before dismissing the view.
 
     SKTipAlertView *alertView = [SKTipAlertView sharedTipAlertView];
     [alertView showNotificationForView:view forDuration:2 andPosition:SKTipAlertViewPositionBottom permanent:YES];
+
+  Or just pass string to these functions to show Red/Green/Blue default alert
+
+    [alertView showBlueNotificationForString:@"Blue Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+
+    [alertView showGreenNotificationForString:@"Green Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+
+    [alertView showRedNotificationForString:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:YES];
 
 Or see the Demo inside the project.
 

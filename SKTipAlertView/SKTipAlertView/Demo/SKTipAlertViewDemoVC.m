@@ -68,7 +68,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 7;
+    return 9;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -94,7 +94,12 @@
         [cell.textLabel setText:@"Show Red Alert from string"];
     } else if (indexPath.row == 6) {
         [cell.textLabel setText:@"Show Blue Alert from string"];
+    } else if (indexPath.row == 7) {
+        [cell.textLabel setText:@"Show Green Alert from string"];
+    } else if (indexPath.row == 8) {
+        [cell.textLabel setText:@"Red Alert Long multiline string"];
     }
+    
     
     return cell;
 }
@@ -129,7 +134,10 @@
         [alertView showRedNotificationForString:@"Red Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
     } else if (indexPath.row == 6) {
         [alertView showBlueNotificationForString:@"Blue Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
-//        [alertView showBlueNotificationForString:@"Blue alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+    } else if (indexPath.row == 7) {
+        [alertView showGreenNotificationForString:@"Green Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+    } else if (indexPath.row == 8) {
+        [alertView showRedNotificationForString:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:YES];
     }
 }
 

@@ -9,8 +9,10 @@
 #import "SKAlertView.h"
 #import <QuartzCore/QuartzCore.h>
 
-#define SK_ALERT_VIEW_WIDTH 280
-#define SK_ALERT_VIEW_HEIGHT 30
+#define SK_ALERT_VIEW_DEFAULT_WIDTH 280
+#define SK_ALERT_VIEW_MAX_HEIGHT 60
+#define SK_TB_PADDING 5
+#define SK_LR_PADDING 8
 
 @interface SKAlertView ()
 @property (nonatomic,strong) UILabel *contentLabel;
@@ -43,6 +45,14 @@
 
 -(void)setText:(NSString*)text{
     [self.contentLabel setText:text];
+}
+
++(CGSize)alertViewSizeForText:(NSString*)text andWidth:(float)w{
+    if (w == 0) {
+        w = SK_ALERT_VIEW_DEFAULT_WIDTH;
+    }
+    CGSize retsize = [text sizeWithFont:[UIFont systemFontOfSize:14.0] constrainedToSize:CGSizeMake(w, SK_ALERT_VIEW_MAX_HEIGHT) lineBreakMode:NSLineBreakByWordWrapping];
+    return CGSizeMake(retsize.width+SK_LR_PADDING*2, retsize.height+SK_TB_PADDING*2);
 }
 
 @end

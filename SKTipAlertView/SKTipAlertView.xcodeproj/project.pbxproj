@@ -21,10 +21,9 @@
 		F5278CF2171EAA04004D01A4 /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5278CF1171EAA04004D01A4 /* DemoView.m */; };
 		F5278CF4171EAA87004D01A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5278CF3171EAA87004D01A4 /* QuartzCore.framework */; };
 		F5278CF7171EC955004D01A4 /* SKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5278CF6171EC955004D01A4 /* SKAlertView.m */; };
-		F5278CFC171ECB19004D01A4 /* SK-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CF8171ECB19004D01A4 /* SK-Blue.png */; };
-		F5278CFD171ECB19004D01A4 /* SK-Blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CF9171ECB19004D01A4 /* SK-Blue@2x.png */; };
-		F5278CFE171ECB19004D01A4 /* SK-Red.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CFA171ECB19004D01A4 /* SK-Red.png */; };
-		F5278CFF171ECB19004D01A4 /* SK-Red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5278CFB171ECB19004D01A4 /* SK-Red@2x.png */; };
+		F5638F841722864A00CFDA16 /* SK-bgGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638F821722864A00CFDA16 /* SK-bgGreen.png */; };
+		F5638F851722864A00CFDA16 /* SK-bgRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638F831722864A00CFDA16 /* SK-bgRed.png */; };
+		F5638F871722892F00CFDA16 /* SK-bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638F861722892F00CFDA16 /* SK-bgBlue.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +49,9 @@
 		F5278CF3171EAA87004D01A4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F5278CF5171EC955004D01A4 /* SKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertView.h; sourceTree = "<group>"; };
 		F5278CF6171EC955004D01A4 /* SKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertView.m; sourceTree = "<group>"; };
-		F5278CF8171ECB19004D01A4 /* SK-Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-Blue.png"; sourceTree = "<group>"; };
-		F5278CF9171ECB19004D01A4 /* SK-Blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-Blue@2x.png"; sourceTree = "<group>"; };
-		F5278CFA171ECB19004D01A4 /* SK-Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-Red.png"; sourceTree = "<group>"; };
-		F5278CFB171ECB19004D01A4 /* SK-Red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-Red@2x.png"; sourceTree = "<group>"; };
+		F5638F821722864A00CFDA16 /* SK-bgGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgGreen.png"; sourceTree = "<group>"; };
+		F5638F831722864A00CFDA16 /* SK-bgRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgRed.png"; sourceTree = "<group>"; };
+		F5638F861722892F00CFDA16 /* SK-bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgBlue.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +141,9 @@
 				F5278CED171EA4FA004D01A4 /* SKTipAlertView.m */,
 				F5278CF5171EC955004D01A4 /* SKAlertView.h */,
 				F5278CF6171EC955004D01A4 /* SKAlertView.m */,
-				F5278CF8171ECB19004D01A4 /* SK-Blue.png */,
-				F5278CF9171ECB19004D01A4 /* SK-Blue@2x.png */,
-				F5278CFA171ECB19004D01A4 /* SK-Red.png */,
-				F5278CFB171ECB19004D01A4 /* SK-Red@2x.png */,
+				F5638F861722892F00CFDA16 /* SK-bgBlue.png */,
+				F5638F821722864A00CFDA16 /* SK-bgGreen.png */,
+				F5638F831722864A00CFDA16 /* SK-bgRed.png */,
 			);
 			path = SKTipAlertView;
 			sourceTree = "<group>";
@@ -206,10 +203,9 @@
 				F5278CDE171EA4C8004D01A4 /* Default.png in Resources */,
 				F5278CE0171EA4C8004D01A4 /* Default@2x.png in Resources */,
 				F5278CE2171EA4C8004D01A4 /* Default-568h@2x.png in Resources */,
-				F5278CFC171ECB19004D01A4 /* SK-Blue.png in Resources */,
-				F5278CFD171ECB19004D01A4 /* SK-Blue@2x.png in Resources */,
-				F5278CFE171ECB19004D01A4 /* SK-Red.png in Resources */,
-				F5278CFF171ECB19004D01A4 /* SK-Red@2x.png in Resources */,
+				F5638F841722864A00CFDA16 /* SK-bgGreen.png in Resources */,
+				F5638F851722864A00CFDA16 /* SK-bgRed.png in Resources */,
+				F5638F871722892F00CFDA16 /* SK-bgBlue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,4 +15,6 @@
 -(void)setbackgroundImage:(UIImage*)image;
 -(void)setText:(NSString*)text;
 
++(CGSize)alertViewSizeForText:(NSString*)text andWidth:(float)w;
+
 @end
