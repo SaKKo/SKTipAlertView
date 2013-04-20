@@ -16,10 +16,15 @@ The code is clean and easy to read.
 
 Installation
 ------------
-copy 2 files to your project
-SKTipAlertView.h
-SKTipAlertView.m
+copy all files inside folder name `SKTipAlertView` to your project
 
+`SKTipAlertView.h / .m`
+
+`SKAlertView.h / .m`
+
+`SK-bgBlue.png`
+`SK-bgRed.png`
+`SK-bgGreen.png`
 
 Usage
 -----
