@@ -133,7 +133,7 @@
     } else if (indexPath.row == 5) {
         [alertView showRedNotificationForString:@"Red Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
     } else if (indexPath.row == 6) {
-        [alertView showBlueNotificationForString:@"Blue Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
+        [alertView showBlueNotificationForString:@"Blue Alert, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
     } else if (indexPath.row == 7) {
         [alertView showGreenNotificationForString:@"Green Alert" forDuration:1 andPosition:SKTipAlertViewPositionBottom permanent:NO];
     } else if (indexPath.row == 8) {

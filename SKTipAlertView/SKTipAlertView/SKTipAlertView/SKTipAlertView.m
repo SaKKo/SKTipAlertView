@@ -56,7 +56,7 @@ id sharedTipAlertView = nil;
 -(void)showRedNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
     CGSize viewSize = [SKAlertView alertViewSizeForText:content andWidth:0];
     SKAlertView *view = [[SKAlertView alloc] initWithFrame:CGRectMake(0, 0, viewSize.width, viewSize.height)];
-    [view setbackgroundImage:[[UIImage imageNamed:@"SK-bgRed"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)]];
+    [view setbackgroundImage:[[UIImage imageNamed:@"SK-bgRed"] resizableImageWithCapInsets:UIEdgeInsetsMake(16, 16, 16, 16)]];
     [view setText:content];
     [self showNotificationForView:view forDuration:duration andPosition:position permanent:permanent];
 }
@@ -64,7 +64,7 @@ id sharedTipAlertView = nil;
 -(void)showBlueNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
     CGSize viewSize = [SKAlertView alertViewSizeForText:content andWidth:0];
     SKAlertView *view = [[SKAlertView alloc] initWithFrame:CGRectMake(0, 0, viewSize.width, viewSize.height)];
-    [view setbackgroundImage:[[UIImage imageNamed:@"SK-bgBlue"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)]];
+    [view setbackgroundImage:[[UIImage imageNamed:@"SK-bgBlue"] resizableImageWithCapInsets:UIEdgeInsetsMake(16, 16, 16, 16)]];
     [view setText:content];
     [self showNotificationForView:view forDuration:duration andPosition:position permanent:permanent];
 }
@@ -72,7 +72,7 @@ id sharedTipAlertView = nil;
 -(void)showGreenNotificationForString:(NSString*)content forDuration:(float)duration andPosition:(SKTipAlertViewPosition)position permanent:(BOOL)permanent{
     CGSize viewSize = [SKAlertView alertViewSizeForText:content andWidth:0];
     SKAlertView *view = [[SKAlertView alloc] initWithFrame:CGRectMake(0, 0, viewSize.width, viewSize.height)];
-    [view setbackgroundImage:[[UIImage imageNamed:@"SK-bgGreen"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10)]];
+    [view setbackgroundImage:[[UIImage imageNamed:@"SK-bgGreen"] resizableImageWithCapInsets:UIEdgeInsetsMake(16, 16, 16, 16)]];
     [view setText:content];
     [self showNotificationForView:view forDuration:duration andPosition:position permanent:permanent];
 }
