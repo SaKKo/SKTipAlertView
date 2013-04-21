@@ -25,6 +25,8 @@
 		F5638F851722864A00CFDA16 /* SK-bgRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638F831722864A00CFDA16 /* SK-bgRed.png */; };
 		F5638F871722892F00CFDA16 /* SK-bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638F861722892F00CFDA16 /* SK-bgBlue.png */; };
 		F5638FA31723A49B00CFDA16 /* SK-bgBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638FA21723A49B00CFDA16 /* SK-bgBlue@2x.png */; };
+		F5638FA61723AB5B00CFDA16 /* SK-bgGreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638FA41723AB5B00CFDA16 /* SK-bgGreen@2x.png */; };
+		F5638FA71723AB5B00CFDA16 /* SK-bgRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5638FA51723AB5B00CFDA16 /* SK-bgRed@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		F5638F831722864A00CFDA16 /* SK-bgRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgRed.png"; sourceTree = "<group>"; };
 		F5638F861722892F00CFDA16 /* SK-bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgBlue.png"; sourceTree = "<group>"; };
 		F5638FA21723A49B00CFDA16 /* SK-bgBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgBlue@2x.png"; sourceTree = "<group>"; };
+		F5638FA41723AB5B00CFDA16 /* SK-bgGreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgGreen@2x.png"; sourceTree = "<group>"; };
+		F5638FA51723AB5B00CFDA16 /* SK-bgRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SK-bgRed@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +150,9 @@
 				F5638F861722892F00CFDA16 /* SK-bgBlue.png */,
 				F5638FA21723A49B00CFDA16 /* SK-bgBlue@2x.png */,
 				F5638F821722864A00CFDA16 /* SK-bgGreen.png */,
+				F5638FA41723AB5B00CFDA16 /* SK-bgGreen@2x.png */,
 				F5638F831722864A00CFDA16 /* SK-bgRed.png */,
+				F5638FA51723AB5B00CFDA16 /* SK-bgRed@2x.png */,
 			);
 			path = SKTipAlertView;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 				F5638F851722864A00CFDA16 /* SK-bgRed.png in Resources */,
 				F5638F871722892F00CFDA16 /* SK-bgBlue.png in Resources */,
 				F5638FA31723A49B00CFDA16 /* SK-bgBlue@2x.png in Resources */,
+				F5638FA61723AB5B00CFDA16 /* SK-bgGreen@2x.png in Resources */,
+				F5638FA71723AB5B00CFDA16 /* SK-bgRed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

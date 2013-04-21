@@ -18,13 +18,14 @@ Installation
 ------------
 copy all files inside folder name `SKTipAlertView` to your project
 
-`SKTipAlertView.h / .m`
+`SKTipAlertView.h & .m`
 
-`SKAlertView.h / .m`
+`SKAlertView.h & .m`
 
-`SK-bgBlue.png`
-`SK-bgRed.png`
-`SK-bgGreen.png`
+Images
+`SK-bgBlue.png & @2x.png`
+`SK-bgRed.png & @2x.png`
+`SK-bgGreen.png & @2x.png`
 
 Usage
 -----
